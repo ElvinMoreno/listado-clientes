@@ -1,0 +1,52 @@
+<div class="listado-container">
+  <div class="fila">
+    <div class="columna"><span class="operador">Operador</span></div>
+    <div class="columna"></div>
+  </div>
+  <div class="fila">
+    <div class="columna">
+      <h4>Listado de clientes</h4>
+    </div>
+    <div class="columna">
+      <span class="material-symbols-outlined">
+        add_box
+        </span>
+    </div>
+  </div>
+  <div class="fila">
+    <div class="columna"></div>
+    <div class="columna">
+      <button mat-stroked-button class="boton-filtro">Agregar filtro</button>
+    </div>
+  </div>
+</div>
+
+<!-- contendor dos -->
+<div class="cards-container">
+  <div *ngFor="let client of paginatedClients" class="card-wrapper">
+    <mat-card class="client-card" appearance="outlined">
+      <div class="card-content">
+        <div class="user-icon">
+          <span class="material-symbols-outlined">person </span>
+        </div>
+        <div class="client-info">
+          <mat-card-title>{{client.name}}</mat-card-title>
+          <mat-card-subtitle>Fecha Antigüedad: {{client.since}}</mat-card-subtitle>
+          <p>Crédito más grande: {{client.largestCredit}}</p>
+        </div>
+        <div class="card-actions">
+          <button mat-raised-button color="primary" class="deuda">$ DEUDA</button>
+          <button mat-raised-button color="accent" class="detalles">DETALLES</button>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>
+
+<mat-paginator [length]="clients.length"
+               [pageSize]="pageSize"
+               [pageSizeOptions]="pageSizeOptions"
+               (page)="pageEvent = paginateClients($event)!"
+               aria-label="Seleccionar página">
+</mat-paginator>
+

@@ -1,0 +1,45 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+mat-toolbar button {
+  margin-right: 10px;
+  background-color: aliceblue;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.up {
+  background-color: #1B1A26;
+}
+
+.arriba {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  color: white !important;
+}
+
+.cuenta {
+  font-size: 26px;
+  margin-left: 8px; /* Añade un margen para separar el icono del texto */
+}
+
+span {
+  text-align: center;
+}
+
+.example {
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para el hover */
+  border-radius: 1cap;
+}
+
+.example:hover {
+  background-color: #333; /* Color de fondo oscuro */
+  color: #fff; /* Color de texto claro */
+
+}

@@ -1,0 +1,62 @@
+.sidebar-nav-list {
+  padding: 0;
+}
+
+.sidebar-nav-list a {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 2%;
+  padding-left: 8%;
+}
+
+.sidebar-nav-list .entry {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-nav-list .entry mat-icon {
+  margin-right: 16px;
+}
+
+.mat-divider {
+  margin: 0;
+}
+h3{
+  margin: 0%;
+  text-align: center;
+  font-style: normal;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.p{
+  color: blue;
+  margin: 0%;
+  padding: 0%;
+}
+.t{
+  font-size: medium;
+}
+
+.home{
+  color: #5E94FF;
+}
+.cajas{
+  color: #8B98A6;
+}
+.citas{
+  color: #8B98A6;
+}
+.historial{
+  color: #8B98A6;
+}
+.operaciones{
+  color: #5E94FF;
+}
+.verificacion{
+  color: #8BC94D;
+}
+.clientes{
+  color: #8B98A6;
+}
+
+

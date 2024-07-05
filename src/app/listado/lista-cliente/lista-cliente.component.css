@@ -1,0 +1,161 @@
+.listado-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: -20px;
+}
+
+.fila {
+  display: contents;
+}
+
+.columna {
+  display: flex;
+  align-items: center;
+}
+
+.columna:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.operador {
+  grid-column: 1 / -1;
+  font-weight: bold;
+}
+
+.titulo {
+  grid-column: 1 / -1;
+}
+
+.footer {
+  grid-column: 1 / -1;
+}
+
+h4 {
+  margin: 0;
+  color: #5E94FF;
+  text-shadow: 1px 1px 3px black;
+}
+
+.icon-agregar {
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.boton-filtro {
+  padding: 10px 15px;
+  background-color: #fff;
+  color:  #4227FD;
+  transition: background-color 0.3s, color 0.3s;
+  border-color: #4227FD;
+  border-radius: 10%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* el otro contenedor */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.card-wrapper {
+  width: 100%;
+}
+
+.client-card {
+  width: 100%;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 8px;
+  text-align: justify;
+  padding: 16px;
+}
+
+.user-icon {
+  grid-row: 1 / span 3;
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  color: #5E94FF;
+  font-size: 30px;
+}
+
+
+
+
+.client-info {
+  grid-row: 1 / span 3;
+  grid-column: 2;
+  color: #1B1A26;
+  font: bold 11px;
+}
+
+.card-actions {
+  grid-row: 4;
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+mat-card-title {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+mat-card-subtitle {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+button {
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.deuda{
+  margin-right: 60px;
+  background-color: #48FF7B;
+  color: #FFFFFF;
+}
+
+.detalles{
+  border-radius: 10%;
+  background-color: #4227FD;
+  color: #FFFFFF;
+}
